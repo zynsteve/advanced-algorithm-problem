@@ -51,7 +51,7 @@ public class KthSmallestSumInTwoSortedArrays {
                 int next_x = cur.x + dx[j];
                 int next_y = cur.y + dy[j];
                 ArrayPair next_Pair = new ArrayPair(next_x, next_y, 0);
-                if (next_x < A.length && next_y < B.length &&  !hash[next_x][next_y]) {
+                if (next_x < A.length && next_y < B.length && !hash[next_x][next_y]) {
                     hash[next_x][next_y] = true;
                     next_Pair.sum = A[next_x] + B[next_y];
                     minHeap.add(next_Pair);
