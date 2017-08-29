@@ -46,9 +46,9 @@ public class KthSmallestNumberInSortedMatrix {
         PriorityQueue<Pair> minHeap = new PriorityQueue<Pair>(k, new PairComparator());
         minHeap.add(new Pair(0, 0, matrix[0][0]));
 
-        for (int i = 0; i < k - 1; i ++) {
+        for (int i = 0; i < k - 1; i++) {
             Pair cur = minHeap.poll();
-            for (int j = 0; j < 2; j ++) {
+            for (int j = 0; j < 2; j++) {
                 int next_x = cur.x + dx[j];
                 int next_y = cur.y + dy[j];
                 Pair next_Pair = new Pair(next_x, next_y, 0);

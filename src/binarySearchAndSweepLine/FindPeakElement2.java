@@ -35,7 +35,7 @@ public class FindPeakElement2 {
         if (flag) {
             int mid = x1 + (x2 - x1) / 2;
             int index = y1;
-            for (int i = y1; i <= y2; ++i) {
+            for (int i = y1; i <= y2; i++) {
                 if (A[mid][i] > A[mid][index]) {
                     index = i;
                 }
@@ -53,7 +53,7 @@ public class FindPeakElement2 {
         } else {
             int mid = y1 + (y2 - y1) / 2;
             int index = x1;
-            for (int i = x1; i <= x2; ++i) {
+            for (int i = x1; i <= x2; i++) {
                 if (A[i][mid] > A[index][mid]) {
                     index = i;
                 }
